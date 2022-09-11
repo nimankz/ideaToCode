@@ -1,0 +1,194 @@
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border:0.25em solid #333;
+    border-radius: 100vw;
+    margin: 0.5em;
+
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #c0c0c0;
+
+}
+
+body{
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-content:center; align-items: center;
+    flex-wrap: wrap;
+    gap:2em;
+    font-family: 'Mingzat', sans-serif;
+
+}
+/*=====================menu====================================*/
+.navbar{
+    height: 6em; width:min(950px,90%);
+    background-image: linear-gradient(to  right ,#c9b1f9,#a7f2f2);
+    position:relative; border-radius:50px;
+    display: flex; flex-direction: row-reverse;
+    justify-content: flex-start; align-items: center;
+    flex-wrap:nowrap; gap:2em;
+}
+.navbar img{
+    height:4em; width:4em;
+    margin:2em;
+}
+.line {
+    width: 2px; height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 18px 9px #e8f3ff;
+}
+.welcomer{
+
+    font-size:min(3em , 4vw) ;
+    display: flex; flex-wrap:nowrap;
+    color: #fff;
+    padding: 0; margin: 2em;
+    /*-webkit-text-stroke: 1px #8fb7f4;*/
+    text-shadow:8px 7px 9px black;
+}
+/*=====================menu====================================*/
+/*====================main===============================*/
+div{
+    background-image: linear-gradient(to bottom right ,#c9b1f9,#a7f2f2);
+}
+div,nav{
+    border: solid 2px #fff;
+}
+.links{
+    height:50em; width:70%;
+    border-radius:25px;
+    display: grid; column-gap: 1em;
+    justify-content: center; align-content:start;
+    grid-area: span 2;
+}
+@media (min-width:950px) {
+    .links{
+        grid-template-columns:repeat(2,20em);
+
+
+    }
+}
+@media (max-width:950px) {
+    .links{
+        grid-template-columns:20em;
+
+
+    }
+}
+a{
+
+    height:5em; width:10em;
+    background-image: linear-gradient(to right,#750dae7a,#c9e5f2);
+    z-index: 1;
+    border-radius:20px;
+    text-decoration: none; text-align: center; line-height:5em;
+    margin:2em;
+    color: black; font-size:22px;
+    outline:solid 2px #fff; outline-offset: +4px;
+}
+/*====================main===============================*/
+/*====================footer===============================*/
+.footer{
+    height: auto; width:90%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    display:grid;gap: 1em 1em;
+    justify-content: center; align-content:center;
+
+
+}
+@media (min-width:950px) {
+    .footer{
+        grid-template-columns:repeat(3,18em);
+        /*grid-template-columns:24em 18.25em 11em;*/
+        grid-template-rows:10em 5em;
+    }
+    .moon{
+        grid-column-end: 4;
+    }
+    .copyright{
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        grid-row-end: 3;
+    }
+    .credits{
+        grid-row: 1;
+    }
+}
+@media (max-width:950px) {
+    .footer{
+        grid-template-columns:20em;
+
+
+    }
+}
+.moon{
+
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 12px #fff;
+    background-image: none;
+    border: none; margin:2em;
+    display: flex;
+    justify-content:center; align-items: center;
+    transform: translate(50%,50%);
+
+}
+.footer a{
+    border:none; background-image: none; outline: none;
+    margin: 1em; font-size: 20px; line-height: 5em;
+    padding: 0; height:auto; width:auto;
+}
+.footer a:hover{
+    color:grey;
+}
+.footer div{
+    background-image: none; border:none;
+}
+.footer p{
+    text-align:center;
+}
+.credits{
+    height:8em; width: 22em;
+    margin:2em;
+    top:50%; left:20%;
+    display: flex;
+    justify-content: start;
+    align-items: center; flex-wrap: wrap;
+
+}
+.credits img{
+    height: 50px; width:50px;
+}
+.credits div{
+    display: flex; justify-content: flex-start; align-items: center;
+    height:5em;
+}
+.credits p{
+    margin:1em;
+}
+.copyright{
+    margin: 1em; padding: 0;
+    color:lightslategray;
+    font-size:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*====================footer===============================*/
